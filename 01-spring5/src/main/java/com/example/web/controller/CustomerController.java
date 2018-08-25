@@ -58,8 +58,7 @@ public class CustomerController {
         Customer customer = customerForm.convertToEntity();
         // 顧客をDBに追加する
         service.save(customer);
-
-        // TODO 3-18 「/」にリダイレクトしている（変更不要）
+        // 「/」にリダイレクト
         return "redirect:/";
     }
 }
