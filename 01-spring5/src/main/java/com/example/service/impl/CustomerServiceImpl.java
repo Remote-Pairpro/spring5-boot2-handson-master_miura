@@ -27,7 +27,6 @@ public class CustomerServiceImpl implements CustomerService {
     @Transactional(propagation = REQUIRED, readOnly = false)
     @Override
     public void save(Customer customer) {
-        // TODO 2-07 CustomerRepositoryのsave(Customer)を呼び出す
-
+        repository.save(customer);
     }
 }
