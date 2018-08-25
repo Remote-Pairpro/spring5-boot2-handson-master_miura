@@ -13,9 +13,11 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @ComponentScan(basePackages = "com.example.security.details")
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-    // TODO 4-05 configure(WebSecurity)をオーバーライドして、「/css/**」をセキュリティの除外対象にする
-
-
+    // 「/css/**」をセキュリティの除外対象にする
+    @Override
+    public void configure(WebSecurity web) throws Exception {
+        web.ignoring().mvcMatchers("/css/**");
+    }
 
 
     // TODO 4-06 configure(HttpSecurity)をオーバーライドして、認証認可設定を記述する
