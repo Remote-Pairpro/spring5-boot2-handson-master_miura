@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
-// TODO 4-18 UserDetailsServiceインタフェースを実装していることを確認する（変更不要）
 public class AccountDetailsService implements UserDetailsService {
 
     private final AccountRepository accountRepository;
