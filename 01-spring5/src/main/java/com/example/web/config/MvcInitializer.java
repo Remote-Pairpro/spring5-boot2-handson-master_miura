@@ -18,7 +18,6 @@ public class MvcInitializer extends AbstractAnnotationConfigDispatcherServletIni
         return null;
     }
 
-    // TODO 3-32 getServletConfigClasses()をオーバーライドして、これまで作成した全Java Configを配列で返していることを確認する（変更不要）
     // TODO 4-20 配列にSecurityConfig.classを追加する
 
     protected Class<?>[] getServletConfigClasses() {
