@@ -24,8 +24,6 @@ public class AccountDetailsService implements UserDetailsService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Optional<Account> accountOptional = accountRepository.findByEmail(username);
         Account account = accountOptional.orElseThrow(() -> new UsernameNotFoundException("user not found"));
-        // TODO 4-19 AccountDetailsをnewしてreturnする（コンストラクタにAccountを渡す）
-
-        return null;
+        return new AccountDetails(account);
     }
 }
