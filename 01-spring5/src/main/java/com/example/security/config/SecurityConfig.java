@@ -9,10 +9,9 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-// TODO 4-04 WebSecurityConfigurerAdapterを継承する
 @EnableWebSecurity
 @ComponentScan(basePackages = "com.example.security.details")
-public class SecurityConfig    {
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     // TODO 4-05 configure(WebSecurity)をオーバーライドして、「/css/**」をセキュリティの除外対象にする
 
