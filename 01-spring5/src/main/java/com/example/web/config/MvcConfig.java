@@ -26,7 +26,8 @@ public class MvcConfig implements WebMvcConfigurer {
     public SpringResourceTemplateResolver templateResolver() {
         SpringResourceTemplateResolver templateResolver =
                 new SpringResourceTemplateResolver();
-        // TODO 3-24 ビューを保存するフォルダ名を「classpath:/templates/」に指定する
+        // ビューを保存するフォルダ名を「classpath:/templates/」に指定する
+        templateResolver.setPrefix("classpath:/templates/");
 
         // TODO 3-25 ビューの拡張子を「.html」に指定する
 
