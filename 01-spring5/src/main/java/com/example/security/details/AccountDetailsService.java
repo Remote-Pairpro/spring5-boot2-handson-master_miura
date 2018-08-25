@@ -9,8 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
-// TODO 4-17 ビジネスロジッククラスであることを示すアノテーションを付加する
-
+@Service
 // TODO 4-18 UserDetailsServiceインタフェースを実装していることを確認する（変更不要）
 public class AccountDetailsService implements UserDetailsService {
 
