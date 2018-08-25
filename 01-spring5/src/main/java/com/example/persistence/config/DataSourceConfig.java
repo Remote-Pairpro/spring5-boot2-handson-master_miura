@@ -10,9 +10,7 @@ import java.nio.charset.StandardCharsets;
 
 @Configuration
 public class DataSourceConfig {
-
-    // TODO 1-04 Beanであることを示すアノテーションを付加する
-
+   @Bean
     public EmbeddedDatabase dataSource() {
         return new EmbeddedDatabaseBuilder()
                 .setScriptEncoding(StandardCharsets.UTF_8.name())
