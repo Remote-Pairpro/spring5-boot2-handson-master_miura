@@ -29,10 +29,8 @@ public class CustomerController {
     public String index(Model model) {
         Iterable<Customer> customers =  service.findAll();
         model.addAttribute("customers" , customers);
-
-
-        // TODO 3-11 src/main/resources/templates/index.htmlに遷移する
-        return null;
+        //  src/main/resources/templates/index.htmlに遷移する
+        return "index";
     }
 
     /**
