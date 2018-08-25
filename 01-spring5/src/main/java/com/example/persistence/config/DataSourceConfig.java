@@ -10,7 +10,7 @@ import java.nio.charset.StandardCharsets;
 
 @Configuration
 public class DataSourceConfig {
-   @Bean
+    @Bean
     public EmbeddedDatabase dataSource() {
         return new EmbeddedDatabaseBuilder()
                 .setScriptEncoding(StandardCharsets.UTF_8.name())
