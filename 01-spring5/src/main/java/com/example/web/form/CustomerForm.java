@@ -31,7 +31,6 @@ public class CustomerForm {
     public CustomerForm(String firstName,
                         String lastName,
                         String email,
-                        // TODO 3-06 コンストラクタの引数にも日付フォーマットが必要（変更不要）
                         @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate birthday) {
         this.firstName = firstName;
         this.lastName = lastName;
