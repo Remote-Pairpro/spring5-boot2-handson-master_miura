@@ -65,10 +65,6 @@ public class MvcConfig implements WebMvcConfigurer {
             .addResourceLocations("classpath:/static/css/");
     }
 
-
-
-
-    // TODO 3-29 Beanであることを示すアノテーションが付加されていることを確認する（変更不要）
     @Bean
     public MessageSource messageSource() {
         ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
