@@ -28,8 +28,8 @@ public class MvcConfig implements WebMvcConfigurer {
                 new SpringResourceTemplateResolver();
         // ビューを保存するフォルダ名を「classpath:/templates/」に指定する
         templateResolver.setPrefix("classpath:/templates/");
-
-        // TODO 3-25 ビューの拡張子を「.html」に指定する
+        // ビューの拡張子を「.html」に指定する
+        templateResolver.setSuffix(".html");
 
         templateResolver.setTemplateMode(TemplateMode.HTML);
         templateResolver.setCharacterEncoding(StandardCharsets.UTF_8.name());
