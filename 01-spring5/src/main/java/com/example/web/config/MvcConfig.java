@@ -17,9 +17,8 @@ import org.thymeleaf.templatemode.TemplateMode;
 
 import java.nio.charset.StandardCharsets;
 
-// TODO 3-19 Java Configであることを示すアノテーションを付加されていることを確認する（変更不要）
 @Configuration
-// TODO 3-20 Spring MVCを有効化するアノテーションを付加する
+@EnableWebMvc
 
 // TODO 3-21 コントローラークラスをコンポーネントスキャンしていることを確認する（変更不要）
 @ComponentScan(basePackages = {"com.example.web.controller"})
