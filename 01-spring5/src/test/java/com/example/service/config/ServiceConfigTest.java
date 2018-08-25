@@ -19,7 +19,6 @@ import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-// TODO 2-12 このテストを実行して、ServiceConfigの実装が正しいかチェックする（テストがグリーンになればOK）
 public class ServiceConfigTest {
 
     ServiceConfig serviceConfig = new ServiceConfig();
