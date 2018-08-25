@@ -15,12 +15,10 @@ public class CustomerForm {
     @Length(min = 1, max = 32)
     private String firstName;
 
-    // TODO 3-02 検証アノテーションを確認する（変更不要）
     @NotBlank
     @Length(min = 1, max = 32)
     private String lastName;
 
-    // TODO 3-03 検証アノテーションを確認する（変更不要）
     @NotBlank
     @Length(min = 1, max = 128)
     @Email
