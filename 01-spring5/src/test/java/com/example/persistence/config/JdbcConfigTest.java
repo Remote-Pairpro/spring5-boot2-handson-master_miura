@@ -22,7 +22,6 @@ import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-// TODO 1-13 このテストを実行して、JdbcSourceConfigの実装が正しいかチェックする（テストがグリーンになればOK）
 public class JdbcConfigTest {
 
     JdbcConfig jdbcConfig = new JdbcConfig();
