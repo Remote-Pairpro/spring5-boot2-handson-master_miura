@@ -36,7 +36,7 @@ import static org.springframework.security.test.web.servlet.response.SecurityMoc
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.*;
 
 /*
- * TODO 4-22 このテストを実行して、SecurityConfigの実装が正しいかチェックする
+ * SecurityConfigの実装が正しいかチェックする
  */
 public class SecurityConfigTest {
 
