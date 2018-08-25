@@ -17,7 +17,7 @@ import javax.sql.DataSource;
 @Configuration
 // @Repositoryで定義したリポジトリクラスのパッケージ名を指定する
 @ComponentScan(basePackages = "com.example.persistence.repository.impl")
-// TODO 1-09 CrudRepositoryを継承したインタフェースのパッケージ名を指定する
+@EnableJdbcRepositories(basePackages = "com.example.persistence.repository")
 public class JdbcConfig {
 
     // 引数でDataSourceのBeanを受け取る
