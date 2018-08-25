@@ -11,9 +11,8 @@ import java.time.LocalDate;
 
 public class CustomerForm {
 
-    // TODO 3-01 検証アノテーションを付加する（空白不可、長さ1から32まで）
-
-
+    @NotBlank
+    @Length(min = 1, max = 32)
     private String firstName;
 
     // TODO 3-02 検証アノテーションを確認する（変更不要）
