@@ -24,8 +24,7 @@ public class CustomerServiceImpl implements CustomerService {
         return repository.findAll();
     }
 
-    // TODO 2-06 トランザクション管理アノテーションを付加する（伝播属性＝REQUIRED, 読み取り専用＝false）
-
+    @Transactional(propagation = REQUIRED, readOnly = false)
     @Override
     public void save(Customer customer) {
         // TODO 2-07 CustomerRepositoryのsave(Customer)を呼び出す
