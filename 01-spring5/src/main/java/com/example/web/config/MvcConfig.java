@@ -68,8 +68,8 @@ public class MvcConfig implements WebMvcConfigurer {
     @Bean
     public MessageSource messageSource() {
         ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
-        // TODO 3-30 メッセージを記述するプロパティファイル名を「messages」に指定する
-
+        // メッセージを記述するプロパティファイル名を「messages」に指定する
+        messageSource.setBasename("messages");
         messageSource.setDefaultEncoding(StandardCharsets.UTF_8.name());
         return messageSource;
     }
