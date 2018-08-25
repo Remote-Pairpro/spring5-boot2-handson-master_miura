@@ -21,8 +21,7 @@ public class CustomerServiceImpl implements CustomerService {
     @Transactional(propagation = REQUIRED, readOnly = true)
     @Override
     public Iterable<Customer> findAll() {
-        // TODO 2-05 CustomerRepositoryのfindAll()を呼び出す
-        return null;
+        return repository.findAll();
     }
 
     // TODO 2-06 トランザクション管理アノテーションを付加する（伝播属性＝REQUIRED, 読み取り専用＝false）
