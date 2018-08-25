@@ -10,8 +10,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
  * このクラスを作成するだけで、DispatcherServletがサーブレットコンテナに登録されます。
  * Servlet 3.0から導入されたServlet Initializerの機能を利用しています。
  */
-// TODO 3-31 AbstractAnnotationConfigDispatcherServletInitializerクラスを継承する
-public class MvcInitializer    {
+public class MvcInitializer extends AbstractAnnotationConfigDispatcherServletInitializer  {
 
     // getRootConfigClasses()をオーバーライドしてnullをreturnする
 
