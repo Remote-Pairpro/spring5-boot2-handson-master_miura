@@ -37,7 +37,6 @@ public class MvcConfig implements WebMvcConfigurer {
         return templateResolver;
     }
 
-    // TODO 3-26 Beanであることを示すアノテーションが付加されていることを確認する（変更不要）
     @Bean
     public SpringTemplateEngine templateEngine(SpringResourceTemplateResolver templateResolver) {
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
