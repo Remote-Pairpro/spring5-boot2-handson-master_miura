@@ -14,19 +14,20 @@ public class MvcInitializer extends AbstractAnnotationConfigDispatcherServletIni
 
     // getRootConfigClasses()をオーバーライドしてnullをreturnする
 
+    @Override
     protected Class<?>[] getRootConfigClasses() {
         return null;
     }
 
     // TODO 4-20 配列にSecurityConfig.classを追加する
 
+    @Override
     protected Class<?>[] getServletConfigClasses() {
         return new Class[]{DataSourceConfig.class, JdbcConfig.class, ServiceConfig.class,
                 MvcConfig.class};
     }
 
-    // TODO 3-33 getServletMappings()をオーバーライドして「/」を指定していることを確認する（変更不要）
-
+    @Override
     protected String[] getServletMappings() {
         return new String[]{ "/" };
     }
