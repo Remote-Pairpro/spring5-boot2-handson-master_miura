@@ -22,7 +22,6 @@ import java.nio.charset.StandardCharsets;
 @ComponentScan(basePackages = {"com.example.web.controller"})
 public class MvcConfig implements WebMvcConfigurer {
 
-    // TODO 3-23 Beanであることを示すアノテーションが付加されていることを確認する（変更不要）
     @Bean
     public SpringResourceTemplateResolver templateResolver() {
         SpringResourceTemplateResolver templateResolver =
