@@ -25,8 +25,7 @@ public class CustomerForm {
     private String email;
 
     @NotNull
-    // TODO 3-05 アノテーションで日付フォーマットを「yyyy-MM-dd」に指定する
-
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate birthday;
 
     public CustomerForm(String firstName,
