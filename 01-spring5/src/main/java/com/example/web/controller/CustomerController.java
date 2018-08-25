@@ -56,7 +56,8 @@ public class CustomerController {
         if (bindingResult.hasErrors()) return "insertMain";
         // フォームをエンティティに変換
         Customer customer = customerForm.convertToEntity();
-        // TODO 3-17 顧客をDBに追加する
+        // 顧客をDBに追加する
+        service.save(customer);
 
         // TODO 3-18 「/」にリダイレクトしている（変更不要）
         return "redirect:/";
