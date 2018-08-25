@@ -18,15 +18,20 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public void configure(WebSecurity web) throws Exception {
         web.ignoring().mvcMatchers("/css/**");
     }
-
-
-    // TODO 4-06 configure(HttpSecurity)をオーバーライドして、認証認可設定を記述する
-
-
-
-
-
-
+    
+    // 認証認可設定を記述する
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http.formLogin()
+            .loginPage("/login")
+            .permitAll();
+        http.authorizeRequests()
+            .mvcMatchers("/insert*").hasRole("ADMIN")
+            .anyRequest().authenticated();
+        http.logout()
+            .invalidateHttpSession(true)
+            .permitAll();
+    }
 
     // TODO 4-07 Beanであることを示すアノテーションを付加する
 
