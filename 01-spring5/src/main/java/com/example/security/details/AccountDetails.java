@@ -11,7 +11,6 @@ import java.util.List;
 /**
  * Accountを保持するUserDetails実装クラス
  */
-// TODO 4-12 UserDetailsを実装していることを確認する（変更不要）
 public class AccountDetails implements UserDetails {
 
     private final Account account;
