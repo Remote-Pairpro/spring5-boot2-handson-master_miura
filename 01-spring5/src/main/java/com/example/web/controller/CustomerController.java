@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class CustomerController {
@@ -47,8 +48,7 @@ public class CustomerController {
     /**
      * 社員の追加を行うコントローラーメソッド。
      */
-    // TODO 3-14 アノテーションを付加して「POST /insertComplete」に対応させる
-
+    @PostMapping("/insertComplete")
     public String insertComplete(
             // TODO 3-15 Bean Validationを実行するアノテーションを付加する
                CustomerForm customerForm,
