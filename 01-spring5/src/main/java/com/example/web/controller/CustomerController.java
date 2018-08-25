@@ -25,8 +25,7 @@ public class CustomerController {
     /**
      * 社員一覧画面に遷移するコントローラーメソッド。
      */
-    // TODO 3-09 アノテーションを付加して「GET /」に対応させる
-
+    @GetMapping("/")
     public String index(Model model) {
         // TODO 3-10 顧客を全件検索して、遷移先の画面に「customers」という名前で渡す
 
