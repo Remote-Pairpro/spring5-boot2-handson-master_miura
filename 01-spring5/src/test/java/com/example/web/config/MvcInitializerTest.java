@@ -11,7 +11,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/* 
+/*
  *  - テスト実行前に
  *      - getServletConfigClassesTest_withSpringSecurity()メソッドをテスト対象から外すために、@Disabledを付加してください
  */
