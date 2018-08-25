@@ -24,26 +24,22 @@ public class AccountDetails implements UserDetails {
     }
 
     public Account getAccount() {
-        // TODO 4-13 accountフィールドを返していることを確認する（変更不要）
         return account;
     }
 
     @Override
     public String getUsername() {
-        // TODO 4-14 accountのemailを返す
-        return null;
+        return account.getEmail();
     }
 
     @Override
     public String getPassword() {
-        // TODO 4-15 accountのpasswordを返す
-        return null;
+        return account.getPassword();
     }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        // TODO 4-16 authoritiesフィールドを返す
-        return null;
+        return authorities;
     }
 
     @Override
