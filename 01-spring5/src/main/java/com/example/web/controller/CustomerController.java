@@ -53,10 +53,7 @@ public class CustomerController {
     public String insertComplete(
                @Validated CustomerForm customerForm,
                BindingResult bindingResult) {
-        // TODO 3-16 検証エラーがあればinsertMain.htmlに遷移する
-
-
-
+        if (bindingResult.hasErrors()) return "insertMain";
         // フォームをエンティティに変換
         Customer customer = customerForm.convertToEntity();
         // TODO 3-17 顧客をDBに追加する
