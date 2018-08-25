@@ -49,7 +49,6 @@ public class MvcConfig implements WebMvcConfigurer {
         return templateEngine;
     }
 
-    // TODO 3-27 Beanであることを示すアノテーションが付加されていることを確認する（変更不要）
     @Bean
     public ThymeleafViewResolver viewResolver(SpringTemplateEngine templateEngine) {
         ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
