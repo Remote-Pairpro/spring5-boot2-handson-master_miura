@@ -57,7 +57,13 @@ public class MvcConfig implements WebMvcConfigurer {
         return viewResolver;
     }
 
-    // TODO 3-28 addResourceHandlers()をオーバーライドして「/css/**」へのリクエストを「classpath:/static/css/」にルーティングする
+    // 「/css/**」へのリクエストを「classpath:/static/css/」にルーティングする
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry
+            .addResourceHandler("/css/**")
+            .addResourceLocations("classpath:/static/css/");
+    }
 
 
 
