@@ -19,12 +19,10 @@ public class MvcInitializer extends AbstractAnnotationConfigDispatcherServletIni
         return null;
     }
 
-    // TODO 4-20 配列にSecurityConfig.classを追加する
-
     @Override
     protected Class<?>[] getServletConfigClasses() {
         return new Class[]{DataSourceConfig.class, JdbcConfig.class, ServiceConfig.class,
-                MvcConfig.class};
+                MvcConfig.class, SecurityConfig.class};
     }
 
     @Override
