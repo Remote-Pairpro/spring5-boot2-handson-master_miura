@@ -12,8 +12,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-// TODO 3-07 コントローラークラスであることを示すアノテーションを付加する
-
+@Controller
 public class CustomerController {
 
     /** 必要があれば、デバッグ時のログ出力に使ってください */
