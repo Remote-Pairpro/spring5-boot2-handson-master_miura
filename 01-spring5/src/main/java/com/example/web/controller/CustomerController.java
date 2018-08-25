@@ -27,7 +27,8 @@ public class CustomerController {
      */
     @GetMapping("/")
     public String index(Model model) {
-        // TODO 3-10 顧客を全件検索して、遷移先の画面に「customers」という名前で渡す
+        Iterable<Customer> customers =  service.findAll();
+        model.addAttribute("customers" , customers);
 
 
         // TODO 3-11 src/main/resources/templates/index.htmlに遷移する
