@@ -24,7 +24,6 @@ public class CustomerForm {
     @Email
     private String email;
 
-    // TODO 3-04 検証アノテーションを確認する（変更不要）
     @NotNull
     // TODO 3-05 アノテーションで日付フォーマットを「yyyy-MM-dd」に指定する
 
