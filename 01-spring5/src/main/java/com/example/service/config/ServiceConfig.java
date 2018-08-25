@@ -9,11 +9,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
 
-// TODO 2-09 @Serviceクラスをコンポーネントスキャンするアノテーションを付加する
-
 // TODO 2-10 トランザクション管理を有効化するアノテーションを付加する
 
 @Configuration
+@ComponentScan(basePackages = "com.example.service.impl")
 public class ServiceConfig {
 
     // TODO 2-11 Beanであることを示すアノテーションを付加する
