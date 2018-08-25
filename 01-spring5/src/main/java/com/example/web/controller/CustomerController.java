@@ -8,9 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class CustomerController {
@@ -18,10 +16,11 @@ public class CustomerController {
     /** 必要があれば、デバッグ時のログ出力に使ってください */
     private static final Logger logger = LoggerFactory.getLogger(CustomerController.class);
 
-    // TODO 3-08 CustomerServiceをコンストラクタインジェクションする
+    private final CustomerService service;
 
-
-
+    public CustomerController(CustomerService service) {
+        this.service = service;
+    }
 
     /**
      * 社員一覧画面に遷移するコントローラーメソッド。
