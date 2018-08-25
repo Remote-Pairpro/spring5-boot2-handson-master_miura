@@ -13,9 +13,7 @@ import javax.sql.DataSource;
 @ComponentScan(basePackages = "com.example.service.impl")
 @EnableTransactionManagement
 public class ServiceConfig {
-
-    // TODO 2-11 Beanであることを示すアノテーションを付加する
-
+    @Bean
     public PlatformTransactionManager transactionManager(DataSource dataSource) {
         // DataSourceTransactionManagerをnewしてreturnする
         // コンストラクタでDataSourceを受け取る
