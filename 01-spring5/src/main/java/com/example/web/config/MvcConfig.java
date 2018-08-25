@@ -19,8 +19,6 @@ import java.nio.charset.StandardCharsets;
 
 @Configuration
 @EnableWebMvc
-
-// TODO 3-21 コントローラークラスをコンポーネントスキャンしていることを確認する（変更不要）
 @ComponentScan(basePackages = {"com.example.web.controller"})
 // TODO 3-22 WebMvcConfigurerインタフェースを実装する
 public class MvcConfig   {
