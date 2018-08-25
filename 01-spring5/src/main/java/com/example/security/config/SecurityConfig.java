@@ -18,7 +18,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public void configure(WebSecurity web) throws Exception {
         web.ignoring().mvcMatchers("/css/**");
     }
-    
+
     // 認証認可設定を記述する
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -33,10 +33,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             .permitAll();
     }
 
-    // TODO 4-07 Beanであることを示すアノテーションを付加する
-
+    @Bean
     public PasswordEncoder passwordEncoder() {
-        // TODO 4-08 BCryptPasswordEncoderをnewしてreturnする
-        return null;
+        return new BCryptPasswordEncoder();
     }
 }
